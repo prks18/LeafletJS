@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+    <link rel="stylesheet" href="assam.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js" integrity="sha256-bd8XIKzrtyJ1O5Sh3Xp3GiuMIzWC42ZekvrMMD4GxRg=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <script src="https://kit.fontawesome.com/debacf553e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder@latest/dist/Control.Geocoder.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/alertify.min.js" integrity="sha256-QFMAm4xflERDUh0NdY1pa0+MovGNNdM8gda//qDRH64=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <script>
+        $(window).load(function() {
+            // Animate loader off screen
+            setTimeout(() => {
+                $(".se-pre-con").fadeOut("slow");
+            }, 7000);
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="se-pre-con"></div>
+    <div class="container">
+        <div id="mapid"></div>
+        <div class="locateMe">
+            <button id="locateMe" onclick="locateMe()"><i class="fas fa-crosshairs"></i></button>
+        </div>
+
+        <div class="leaflet-bottom leaflet-right legenddiv">
+            <div class="info leaflet-control legend">
+
+                <span class="range"><i style="background: #00b300;"> </i>No cases</span>
+                <span class="range"><i style="background: #699d00;"> </i>1-9</span>
+                <span class="range"><i style="background: #9dc922;"> </i>10-49</span>
+                <span class="range"><i style="background: #a5c922;"> </i>50-99</span>
+                <span class="range"><i style="background: #adc447;"> </i>100-199</span>
+                <span class="range"><i style="background: #d3e01b;"> </i>200-499</span>
+                <span class="range"><i style="background: #e3d80b;"> </i>500-899</span>
+                <span class="range"><i style="background: #e3b80b;"> </i>900-999</span>
+                <span class="range"><i style="background: #e3a60b;"> </i>1000-1999</span>
+                <span class="range"><i style="background: #e35e0b;"> </i>2000-3999</span>
+                <span class="range"><i style="background: #e3450b;"> </i>4000-5999</span>
+                <span class="range"><i style="background: #e3360b;"> </i>6000-7999</span>
+                <span class="range"><i style="background: #e3240b;"> </i>8000-9999</span>
+                <span class="range"><i style="background: #e30b0b;"> </i>10000+</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+
+
+
+    <script src="assam.js"></script>
+</body>
+
+</html>

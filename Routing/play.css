@@ -1,0 +1,22 @@
+#mapid {
+    height: 650px;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.leaflet-control .search-bar {
+    margin: 10px;
+    padding: 100px;
+    border: 1px solid #fff;
+}
+
+#display {
+    width: 18vw;
+    height: 10vh;
+    background-color: #fff;
+    text-align: center;
+    margin: 50px;
+    display: none;
+}

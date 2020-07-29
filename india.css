@@ -1,0 +1,52 @@
+#mapid {
+    height: 90vh;
+    width: 80vw;
+}
+
+.my-map-marker {
+    background-color: red;
+}
+
+.leaflet-popup-content-wrapper {
+    padding: 1px;
+    text-align: left;
+    border-radius: 0px;
+}
+
+.leaflet-popup-tip {
+    display: none;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+    display: none;
+}
+
+.tooltip {
+    height: 10vh;
+    /* border: 2px solid rgb(255, 255, 255); */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 3px 4px 0.5px rgb(49, 49, 49);
+    z-index: 10000!important;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.leaflet-tooltip-top:before,
+.leaflet-tooltip-bottom:before,
+.leaflet-tooltip-left:before,
+.leaflet-tooltip-right:before {
+    position: absolute;
+    pointer-events: none;
+    border: 0px;
+    background-color: #fff;
+    content: "";
+    opacity: 1!important;
+}
+
+.tooltipdiv {
+    opacity: 1!important;
+}
+
+.positive {
+    color: red;
+}
